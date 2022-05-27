@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;700;800&family=Noto+Kufi+Arabic:wght@200&display=swap');
+
+main {
+    position: fixed;
+    left: 50%;
+    background-color: hsl(217, 19%, 24%);
+    color: white;
+    border-radius: 10px;
+    top: 50%;
+    width: 360px;
+    /* min-height: 250px; */
+    transform: translateX(-50%) translateY(-50%);
+}
+main .hr {
+    width: 95%;
+    margin-left: 50%;
+    margin-top: 5px;
+    transform: translateX(-50%);
+    margin-bottom: 45px;
+}
+p {
+    font-size: 20px;
+    width: 85%;
+    text-align: center;
+    margin-left: 50%;
+    color: hsl(193, 38%, 86%);
+    transform: translateX(-50%);
+    margin-bottom: 25px;
+}
+p::after {
+    content: "\201D";
+    /* font-family: unset; */
+    /* display: inline-block; */
+    font-size: 20px;
+}
+p::before {
+    /* display: inline-block; */
+    content: "\201C";
+    /* font-family: unset; */
+    font-size: 20px;
+}
+main span {
+    color: hsl(150, 100%, 66%);
+    text-shadow: 0px 0px 8px hsl(150deg 100% 66%);
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.div {
+    position: absolute;
+    bottom: 0px;
+    transform: translate(-50%, 50%);
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    left: 50%;
+    transition: 0.3s;
+}
+.div img {
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    transition: 1s;
+}
+.div:hover {
+    box-shadow: 0px 0px 13px 0px hsl(150deg 100% 66%);
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    background: hsl(218, 23%, 16%);
+    font-weight: 800;
+}
+
+@keyframes random {
+    0% {
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+    100% {
+        transform: rotate(360deg);
+        margin-top: -60px;
+    }
+}
